@@ -1,4 +1,4 @@
-#Domain modelling and disseminating knowledge
+# Domain modelling and disseminating knowledge
 
 Domain modelling is a great way to get an overview of your application, and also to share that overview with others. It can help us to predict future problems and reveal current architecture constraints that may unknowingly be halting our progress. It is also a great skill to be able to understand and discuss other people's architecture and code. The learning objectives for this workshop are as follows:
 

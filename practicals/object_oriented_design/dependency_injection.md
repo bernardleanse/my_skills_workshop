@@ -275,7 +275,7 @@ describe Note do
   # note: the name given to the double doesn't matter, 
   # what is important is that we pass it to `described_class.new` on the following line!
   let(:formatter) { double(:formatter_double, format: expected_format) }
-  let(:note) { described_class.new(title, body, formatter_double) }
+  let(:note) { described_class.new(title, body, formatter) }
 
   describe '#display' do
     it 'displays correctly' do

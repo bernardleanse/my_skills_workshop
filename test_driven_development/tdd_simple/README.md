@@ -51,8 +51,9 @@ We forgot to handle those cases when writing the first version of the `PhoneChec
 
 Let's try a different approach. This time, we do not have any written code yet, but only specifications in plain English:
 
-We need a class `PhoneChecker` to check phone numbers. This class has only one method `check` that takes a phone number, it should return *false* if at least one of those conditions is true:
+We need a class `PhoneChecker` to check phone numbers. This class has only one method `check` that takes a phone number, it should return *false* if *at least one of these* conditions is true:
   * the phone number is `nil`
+  * the phone number is not an instance of the `String` class
   * the phone number contains something else than digits
   * the phone number is shorter than 8 characters, or longer than 10.
 

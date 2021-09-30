@@ -10,12 +10,12 @@ Given these user stories:
 ```
 As a coach,
 So that I know who I am coaching,
-I would like a student to have a name
+I would like to record students names
 ```
 ```
 As a coach,
 So that I can track attendance,
-I would like a student to sign in and sign out
+I would like a student to be able to sign in and sign out
 ```
 ```
 As a coach,
@@ -25,17 +25,15 @@ I would like to add a student to the cohort
 ```
 As a coach,
 So that I can see who is in my cohort,
-I would like to list students in the cohort
+I would like to see a list of students in the cohort
 ```
 ```
 As a coach,
 So that I know how many students are in,
-I would like to count how many students are signed in
+I would like a count of how many students are signed in
 ```
 
 Let's talk about how we could go about deciding our domain model for these requirements.
-
-
 
 ### Exercise 1
 
@@ -45,13 +43,13 @@ What would a domain diagram for these user stories look like?
 
 ```
 As a librarian
-So that the public can read my books
+So that the public can know which books we have on offer
 I would like a book to have a title and an author
 ```
 
 ```
 As a librarian
-So that the public has more variety
+So that I can properly represent the books we have
 I would like to add a book to the library
 ```
 
@@ -76,14 +74,15 @@ I would like to count how many books are damaged in the library
 ```
 As a librarian
 So that the public know what books titles are written by their favourite author
-I would like the library to list all book titles by specific author
+I would like the library to list all book titles by a specific author
 ```
 
 ### Exercise 2
 
 An example implementation of our domain diagram for our cohort/student problem could be.
 Try running the code in irb.
-What would you do to convince yourself the methods in student and cohort are working?
+Using irb, can you use to code to make sure each user story is implemented?
+How closely does this code follow the domain model that was created?
 
 ```
 class Student
@@ -128,12 +127,11 @@ class Cohort
 end    
 ```
 
-
 ### Follow on
 Some activities that may help you practise this skill could be to:
 - Have a go at writing the code and manually testing the library/book example (you may find the starter code below helpful)
 - Have a go at writing tests in rspec. If you want to focus on TDD, you can delete the code and test drive the program
-- Have a go at isolating your tests between book and library
+- Stretch - Have a go at isolating your tests between book and library
 
 ```
 class Book
