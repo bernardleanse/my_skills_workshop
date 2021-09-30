@@ -20,6 +20,8 @@ class Appointment
   attr_reader :location, :geocoder
 
   def geo_location
+    puts " geocoder class = #{geocoder.class}"
+    puts geocoder.search(location)
     geocoder.search(location)[0]
   end
 end

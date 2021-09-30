@@ -3,6 +3,7 @@ require 'fizzbuzz'
 describe FizzBuzz do
   describe "#play" do
     it "returns 1 when 1 is given" do
+      puts subject
       expect(subject.play(1)).to eq 1
     end
 
