@@ -2,7 +2,7 @@
 
 # Understands how to present a random, happy emoji
 class RandomHappyEmoji
-  HAPPY_EMOJI = [":D"]
+  HAPPY_EMOJI = [":D", ":)"]
 
   def get_emoji
     HAPPY_EMOJI[random_index]
